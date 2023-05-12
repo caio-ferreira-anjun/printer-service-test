@@ -18,12 +18,12 @@ export class LabelDTO {
 
     @ApiProperty({
         description : 'Número do Container',
-        example : `38`,
+        example : `HBR23011292263`,
         required : false
     })
     @IsOptional()
     @IsNumber()
-    container : number;
+    container : string;
 
     @ApiProperty({
         description : 'Número da PLP',
