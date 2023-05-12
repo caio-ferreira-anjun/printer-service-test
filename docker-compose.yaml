@@ -1,0 +1,12 @@
+services:
+  mysql:
+    container_name: mysql-sorter-api
+    image: mysql:latest
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DB=${MYSQL_DATABASE}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+    ports:
+      - '3307:3306'
+    restart: always
